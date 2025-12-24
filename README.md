@@ -1,6 +1,6 @@
 # Postaaja
 
-**Postaaja** is an early full-stack SaaS project I built in **2025** as one of my first serious development projects.  
+**Postaaja** was an early full-stack SaaS project I built in **2025** as one of my first serious development projects.  
 It was a real business attempt focused on selling **personalized, fine-tuned AI chatbots** for sales professionals, integrated directly into **Telegram**.
 
 The core idea was to help users generate high-quality sales listings in their own writing style in seconds, instead of spending hours manually writing posts.
@@ -9,7 +9,7 @@ While the business itself did not scale, the project represents a significant st
 
 ---
 
-## 🧠 What Postaaja Did
+## What Postaaja Did
 
 - Generated **sales listings automatically** based on structured user input
 - Used **fine-tuned OpenAI models** to match the user’s personal writing tone
@@ -20,11 +20,10 @@ While the business itself did not scale, the project represents a significant st
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React**
-- **React Router**
 - Vanilla CSS
 - Responsive layout (desktop & mobile)
 - Landing page, pricing, onboarding flow, legal pages
@@ -41,10 +40,9 @@ While the business itself did not scale, the project represents a significant st
 - Custom system prompts per use case
 - Structured input validation before generation
 
-
 ---
 
-## 🚧 Project Status
+## Project Status
 
 This project is **no longer actively maintained**.
 
@@ -64,7 +62,7 @@ That said, the project remains a solid demonstration of **end-to-end product dev
 
 ---
 
-## 🎯 Why This Project Still Matters
+## Why This Project Still Matters
 
 - It was a **real business attempt**, not a tutorial
 - It involved **real users**, real constraints, and real trade-offs
@@ -73,15 +71,15 @@ That said, the project remains a solid demonstration of **end-to-end product dev
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 - API keys and secrets are intentionally not included
-- Some UI copy is in Finnish, as the original target market was Finland
+- The UI copy is in Finnish, as the original target market was Finland
 - The code reflects my skill level at the time (2025)
 
 ---
 
-## 👤 Author
+## Author
 
 Built by **Luka Turunen**  
 Early full-stack & AI-focused project
