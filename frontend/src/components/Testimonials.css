@@ -1,0 +1,241 @@
+.testimonials {
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-slide {
+    min-width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+.testimonial-slide.active {
+    display: flex;
+}
+
+.testimonial-card {
+    background: white;
+    border: none;
+    border-radius: 16px;
+    padding: 32px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.1);
+    font-family: serif;
+    line-height: 1;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.reviewer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.reviewer-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.star-rating {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    font-size: 20px;
+    color: #ffd700;
+    transition: all 0.2s ease;
+}
+
+.star.empty {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.star.half {
+    position: relative;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.star.half::before {
+    content: '★';
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: #ffd700;
+}
+
+.review-text {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.review-company {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.arrow {
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.arrow:hover {
+    background: #000;
+    color: white;
+    border-color: #000;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.left-arrow {
+    left: -20px;
+}
+
+.right-arrow {
+    right: -20px;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        max-width: 100%;
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .testimonials {
+        max-width: 100vw;
+        padding: 0 20px;
+        margin: 0 10px;
+    }
+    
+    .arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .left-arrow {
+        left: 0px;
+    }
+    
+    .right-arrow {
+        right: 0px;
+    }
+
+    .reviewer-name {
+        font-size: 16px;
+    }
+
+    .review-text {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .star {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        padding: 16px;
+        margin: 0 5px;
+    }
+
+    .testimonials {
+        padding: 0 10px;
+        margin: 0 5px;
+    }
+    
+    .arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    .left-arrow {
+        left: -10px;
+    }
+    
+    .right-arrow {
+        right: -10px;
+    }
+
+    .reviewer-name {
+        font-size: 15px;
+    }
+
+    .review-text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .star {
+        font-size: 16px;
+    }
+}
