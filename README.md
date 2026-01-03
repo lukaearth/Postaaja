@@ -81,7 +81,7 @@ That said, the project remains a solid demonstration of **end-to-end product dev
 
 ## Author
 
-Built by **Luka Turunen**  
+Built by **luka.earth**  
 Early full-stack & AI-focused project
 
 ---
